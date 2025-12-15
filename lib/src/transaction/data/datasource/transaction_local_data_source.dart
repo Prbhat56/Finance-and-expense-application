@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:finanace_and_expense_app/src/transaction/data/models/transaction_model.dart';
 import 'package:hive/hive.dart';
-import 'package:smart_finance_tracker/features/transactions/data/models/transaction_model.dart';
 
 abstract class TransactionLocalDataSource {
   Future<List<TransactionModel>> getTransactions({int? limit});

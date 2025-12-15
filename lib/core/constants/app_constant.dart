@@ -30,5 +30,11 @@ class AppConstants {
     'Other': Color(0xFF6C757D),
   };
   
-
+  static Map<String, dynamic> routes = {
+    '/': (context) => const DashboardScreen(),
+    '/transactions': (context) => const TransactionsScreen(),
+    '/add-transaction': (context) => const AddEditTransactionScreen(),
+    '/edit-transaction': (context) => const AddEditTransactionScreen(),
+    '/budgets': (context) => const BudgetsScreen(),
+  };
 }

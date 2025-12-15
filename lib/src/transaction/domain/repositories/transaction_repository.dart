@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:smart_finance_tracker/core/error/failures.dart';
-import 'package:smart_finance_tracker/features/transactions/domain/entities/transaction.dart';
+import 'package:finanace_and_expense_app/core/error/failures.dart';
+import 'package:finanace_and_expense_app/src/transaction/domain/entities/transaction.dart';
 
 abstract class TransactionRepository {
   Future<Either<Failure, List<Transaction>>> getTransactions({int? limit});
